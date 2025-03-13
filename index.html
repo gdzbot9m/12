@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета абитуриента</title>
+</head>
+<body>
+    <h1>Анкета абитуриента</h1>
+    <form action="/submit" method="post">
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="patronymic">Отчество:</label>
+        <input type="text" id="patronymic" name="patronymic"><br><br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">М</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Ж</label><br><br>
+
+        <label>Знание иностранного языка:</label><br>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">Английский</label><br>
+        <input type="checkbox" id="german" name="language" value="german">
+        <label for="german">Немецкий</label><br>
+        <input type="checkbox" id="french" name="language" value="french">
+        <label for="french">Французский</label><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
